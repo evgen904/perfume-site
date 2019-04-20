@@ -1,16 +1,32 @@
 $(function(){
 
-
-
     var menuTop = $('.js-m-top-clone').clone();
-    $('.js-m-top-add').append(menuTop);
-
     var socialClone = $('.js-social-clone').clone();
     var mailClone = $('.js-mail-clone').clone();
-
+    $('.js-m-top-add').prepend('<ul class="item-vendor"><li><a href="#">Бренды</a></li></ul>').prepend(menuTop);
     $('.js-cont-append').append(mailClone);
     $('.js-append-soc').next().append(socialClone);
 
+
+    $(document).on('click','.js-menu-popup',function(){
+        $(this).parent('.menu-burger').addClass('active');
+    });
+    $(document).on('click','.js-menu-popup-close',function(){
+        $(this).parents('.menu-burger').removeClass('active');
+    });
+
+    $(document).on('click','.item-vendor a',function(event){
+        event.preventDefault();
+        $('.js-select-vendor').addClass('active');
+    });
+    $(document).on('click','.js-select-vendor-close',function(){
+        $('.js-select-vendor').removeClass('active');
+    });
+        
+    $('.js-vendor-item > li').on('click',function(){
+        $('.js-vendor-item > li').removeClass('active');
+        $(this).addClass('active');    
+    });
 
 
 
@@ -23,7 +39,6 @@ $(function(){
             $(this).next().hide();
         }
     });
-
 
 
     $('.js-search-btn').on('click',function(){
@@ -66,6 +81,14 @@ $(function(){
         }
     });
 
+
+    $('.products-tabs-nav span').on('click',function(){
+        $('.products-tabs-nav span').removeClass('active');
+        $(this).addClass('active');
+        $('.products-tabs-body > div').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
+
     $(".slider-head-in").owlCarousel({
         nav : false,
         dots: true,
@@ -82,7 +105,6 @@ $(function(){
             $(".slider-head-title, .slider-head-note").addClass('animated fadeInLeft');
         },200);
     }
-
 
     $('.js-slider-prod').owlCarousel({
         nav : true,
@@ -125,58 +147,5 @@ $(function(){
             }
         }
     });
-
-    var sliderProd = $('.js-prod-slider');
-    sliderProd.owlCarousel({
-        items: 1,
-        margin: 0,
-        nav: true,
-        dots: false,
-        loop: false,
-        smartSpeed: 800,
-        animateOut: 'fadeOut',
-    });
-    $('.js-prod-slider-thumbs li').on('click',function(){
-        $('.js-prod-slider-thumbs li').removeClass('active');
-        $(this).addClass('active');
-        sliderProd.trigger('to.owl.carousel', [$(this).index(), duration, true]);
-    });
-
-
-
-    $('.products-tabs-nav span').on('click',function(){
-        $('.products-tabs-nav span').removeClass('active');
-        $(this).addClass('active');
-        $('.products-tabs-body > div').removeClass('active').eq($(this).index()).addClass('active');
-    });
-
-
-
-
-
-    /*
-    $('.js-product').lightGallery({
-        thumbnail: false
-    });
-
-    $('.js-other-prosucts').owlCarousel({
-        loop:false,
-        margin:0,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            960:{
-                items:2
-            },
-            1260:{
-                items:3
-            }
-        }
-    });
-
-    $('input[type="tel"]').mask("+7 ( 999 ) 999-99-99");
-    */
     
 });
