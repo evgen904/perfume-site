@@ -46,6 +46,17 @@ $(function(){
     });
 
 
+    $('.js-thumbs-prod li').on('click',function(){
+        $('.js-thumbs-prod li').removeClass('active');
+        $(this).addClass('active');
+
+        if ($(this).index() == 0) {
+            $('.js-img-prod > div').eq(1).fadeOut();
+        } else if ($(this).index() == 1) {
+            $('.js-img-prod > div').eq(1).fadeIn();
+        }
+    });
+
     $(".slider-head-in").owlCarousel({
         nav : false,
         dots: true,
