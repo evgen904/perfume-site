@@ -493,6 +493,24 @@ a {
 					@media all and (max-width: 1440px) {
 						height: 480px;
 					}
+					@media all and (max-width: 960px) {
+						height: 380px;
+					}
+					@media all and (max-width: 640px) {
+						height: 320px;
+						position: relative;
+						&:after {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							background-color: #000;
+							opacity: 0.3;
+						}
+					}
 					.slider-head-title {
 						font-size:50px;
 						font-weight:300;
@@ -506,6 +524,19 @@ a {
 							padding-top: 60px;
 							padding-bottom: 10px;
 						}
+						@media all and (max-width: 960px) {
+							font-size: 26px;
+							padding-top: 40px;
+						}
+						@media all and (max-width: 640px) {
+							font-size: 19px;
+							color: #fff;
+							padding-left: 30px;
+							padding-right: 30px;
+							padding-bottom: 10px;
+							position: relative;
+							z-index: 10;
+						}
 					}
 					.slider-head-note {
 						font-size:75px;
@@ -516,6 +547,17 @@ a {
 						@media all and (max-width: 1440px) {
 							font-size: 45px;
 							padding-left: 50px;
+						}
+						@media all and (max-width: 960px) {
+							font-size: 34px;
+						}
+						@media all and (max-width: 640px) {
+							font-size: 24px;
+							color: #fff;
+							padding-left: 30px;
+							padding-right: 30px;
+							position: relative;
+							z-index: 10;
 						}
 					}
 				}
@@ -528,6 +570,12 @@ a {
 			width: 100%;
 			text-align: center;
 			z-index:10;
+			@media all and (max-width: 960px) {
+				bottom: 14px;
+			}
+			@media all and (max-width: 640px) {
+				display: none;
+			}
 			.owl-dot {
 				display:inline-block;
 				vertical-align:top;
@@ -559,6 +607,9 @@ a {
 			@media all and (max-width: 1440px) {
 				font-size: 35px;
 			}
+			@media all and (max-width: 960px) {
+				font-size: 24px;
+			}
 		}
 		&-body {
 			border-bottom: 1px solid #ebeeee;
@@ -566,6 +617,9 @@ a {
 				&-nav {
 					margin-bottom: 56px;
 					text-align: center;
+					@media all and (max-width: 960px) {
+						margin-bottom: 26px;
+					}
 					span {
 						cursor: pointer;
 						font-size: 14px;
@@ -573,6 +627,10 @@ a {
 						color: #a3a3a3;
 						border-bottom: 2px solid transparent;
 						margin: 0 20px;
+						@media all and (max-width: 960px) {
+							font-size: 13px;
+							margin: 0 6px;
+						}
 						&.active {
 							color: #010101;
 							border-bottom: 2px solid #17171b;
@@ -694,6 +752,9 @@ a {
 		@media all and (max-width: 1440px) {
 			margin-bottom: 100px;
 		}
+		@media all and (max-width: 960px) {
+			margin-bottom: 70px;
+		}
 		&-title {
 			text-align: center;
 			text-transform: uppercase;
@@ -704,6 +765,10 @@ a {
 			@media all and (max-width: 1440px) {
 				font-size: 35px;
 				margin-bottom: 28px;
+			}
+			@media all and (max-width: 960px) {
+				font-size: 24px;
+				margin-bottom: 16px;
 			}
 		}
 		&-body {
@@ -719,6 +784,9 @@ a {
 					padding-bottom: 56px;
 					@media all and (max-width: 1280px) {
 						padding-top: 50px;
+					}
+					@media all and (max-width: 960px) {
+						padding-top: 28px;
 					}
 					.review-body-img {
 						width: 150px;
@@ -1550,6 +1618,9 @@ a {
 	.block-ico-top {
 		display: flex;
 		flex-wrap: wrap;
+		@media all and (max-width: 960px) {
+			flex-direction: column;
+		}
 		&.inner {
 			border-top: 1px solid #e6eaea;
 		}
@@ -1570,11 +1641,25 @@ a {
 			@media all and (max-width: 1280px) {
 				width: 33.3333%;
 			}
+			@media all and (max-width: 960px) {
+				width: 100%;
+				flex-direction: row;
+				text-align: left;
+				align-items: center;
+				justify-content: flex-start;
+				min-height: 100%;
+				padding: 14px 30px 10px;
+			}
 			&:first-list {
 				border-left: none;
 			}
 			.img {
 				margin-bottom: 28px;
+				@media all and (max-width: 960px) {
+					margin: 0;
+					min-width: 60px;
+					padding-right: 10px;
+				}
 			}
 			.text {
 				color: #202121;
@@ -1586,6 +1671,10 @@ a {
 				font-weight: normal;
 				max-width: 200px;
 				margin: 0 auto;
+				@media all and (max-width: 960px) {
+					max-width: 100%;
+					margin: 0;
+				}
 			}
 		}
 	}
@@ -1594,6 +1683,12 @@ a {
 		display: flex;
 		@media all and (max-width: 1440px) {
 			margin-bottom: 80px;
+		}
+		@media all and (max-width: 960px) {
+			margin-bottom: 40px;
+		}
+		@media all and (max-width: 640px) {
+			flex-direction: column;
 		}
 		> a {
 			display: flex;
@@ -1610,8 +1705,21 @@ a {
 				min-height: 280px;
 				justify-content: center;
 			}
+			@media all and (max-width: 960px) {
+				min-height: 200px;
+				padding-bottom: 16px;
+			}
+			@media all and (max-width: 640px) {
+				width: 100%;
+				height: 100px;
+				min-height: 100px;
+				padding: 0;
+				font-size: 16px;
+			}
 			> span {
-				background-color: #fff;
+				@media all and (min-width: 640px) {
+					background: #fff !important;
+				}				
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -1619,6 +1727,16 @@ a {
 				height: 65px;
 				position: relative;
 				transition: all 0.3s ease;
+				@media all and (max-width: 960px) {
+					height: 40px;
+				}
+				@media all and (max-width: 640px) {
+					width: 100%;
+					height: 100px;
+					color: #202121;
+					justify-content: flex-start;
+					padding: 0 30px;
+				}
 				&:after {
 					content: '';
 					display: block;
@@ -1636,7 +1754,9 @@ a {
 			&:hover {
 				color: #fff;
 				> span {
-					background-color: #202121;
+					@media all and (min-width: 640px) {
+						background: #202121 !important;
+					}					
 					padding-right: 60px;
 					&:after {
 						right: 50px;
@@ -1656,6 +1776,9 @@ a {
 		}
 		@media all and (max-width: 1280px) {
 			padding-bottom: 80px;
+		}
+		@media all and (max-width: 960px) {
+			padding-bottom: 44px;
 		}
 		&-title {
 			font-size: 24px;
@@ -1677,6 +1800,37 @@ a {
 		@media all and (max-width: 1440px) {
 			min-height: 480px;
 		}
+		@media all and (max-width: 960px) {
+			min-height: auto;
+		}
+		&-title {
+			display: none;
+			color: #000;
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 18px 50px 10px 30px;
+			position: relative;
+			background: #f7f7f7;
+			min-height: 53px;
+			&.active {
+				&:after {
+					transform: rotate(180deg);
+				}
+			}
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 23px;
+				right: 30px;
+				width: 15px;
+				height: 7px;
+				background: #faf9f9 url('../images/ico-about.png') 50% 0 no-repeat;
+			}
+			@media all and (max-width: 960px) {
+				display: block;
+			}
+		}
 		&-body {
 			text-align: center;
 			font-family: 'Circe';
@@ -1689,6 +1843,11 @@ a {
 			max-width: 790px;
 			margin: 0 auto;
 			padding: 96px 0;
+			@media all and (max-width: 960px) {
+				display: none;
+				padding: 20px 30px;
+				text-align: left;
+			}
 		}
 	}
 	.block-ico-bot {
@@ -1696,7 +1855,11 @@ a {
 		align-items: center;
 		justify-content: space-between;
 		font-family: 'Circe';
-		font-weight: 300;		
+		font-weight: 300;
+		@media all and (max-width: 960px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 		> div {
 			text-align: center;
 			color: #000;
@@ -1712,13 +1875,24 @@ a {
 				text-align: left;
 				padding: 48px 20px;
 			}
+			@media all and (max-width: 960px) {
+				width: 100%;
+				border-left: none;
+				border-bottom: 1px solid #e6eaea;
+				justify-content: flex-start;
+				padding: 18px 22px;
+				font-size: 18px;
+			}
 			&:first-child {
 				border-left: none;
 			}
-			> img {
+			> span {
 				margin-right: 26px;
 				@media all and (max-width: 1280px) {
 					margin-right: 18px;
+				}
+				@media all and (max-width: 960px) {
+					min-width: 70px;
 				}
 			}
 		}
@@ -1742,6 +1916,9 @@ a {
 				margin-bottom: 0;
 				padding: 40px 30px;
 			}
+			@media all and (max-width: 960px) {
+				padding: 0;
+			}
 			.menu-bot {
 				padding: 0;
 				margin: 0;
@@ -1752,13 +1929,80 @@ a {
 					justify-content: center;
 					width: 100%;
 				}
+				@media all and (max-width: 960px) {
+					flex-direction: column;
+				}
 				> li {
 					padding: 0 20px;
+					@media all and (max-width: 960px) {
+						padding: 0;
+						border-bottom: 1px solid #3d3e3e;
+					}
 					> a {
 						text-decoration: none;
 						font-size: 14px;
 						color: #ccc;
 						text-transform: uppercase;
+						@media all and (max-width: 960px) {
+							display: block;
+							padding: 16px 50px 16px 30px;
+						}
+					}
+					&.hasclass {
+						display: none;
+						@media all and (max-width: 960px) {
+							display: block;
+						}
+						> a {
+							position: relative;
+							&:after {
+								content: '';
+								display: block;
+								width: 14px;
+								height: 7px;
+								background: url('../images/bmenu-ico.png') 0 0 no-repeat;
+								position: absolute;
+								top: 50%;
+								margin-top: -4px;
+								right: 30px;
+							}
+						}
+						&.active {
+							> a:after {
+								transform: rotate(180deg);
+							}
+						}
+					}
+					> ul {
+						padding: 6px 0;
+						margin: 0;
+						list-style: none;
+						border-top: 1px solid #3d3e3e;
+						@media all and (max-width: 960px) {
+							display: none;
+						}
+						li {
+							padding: 0 20px 0 40px;
+							a {
+								display: block;
+								text-decoration: none;
+								color: #a9aaaa;
+								text-transform: uppercase;
+								padding: 6px 0;
+								&:hover {
+									text-decoration: underline;
+									color: #fff;
+								}
+							}
+							ul {
+								display: none;
+							}
+						}
+					}
+					&.hasclass.active {
+						> ul {
+							display: block;
+						}
 					}
 				}
 			}
@@ -1788,10 +2032,22 @@ a {
 			@media all and (max-width: 1440px) {
 				padding: 40px 60px;
 			}
+			@media all and (max-width: 960px) {
+				flex-direction: column;
+				padding: 0 0;
+				text-align: center;
+			}
 			.contact-bot-phone {
 				padding-top: 26px;
 				@media all and (max-width: 1280px) {
 					padding-top: 0;
+				}
+				@media all and (max-width: 960px) {
+					order: 1;
+					border-bottom: 1px solid #3d3e3e;
+					margin-bottom: 40px;
+					padding-top: 26px;
+					padding-bottom: 26px;
 				}
 				.name {
 					font-size: 14px;
@@ -1801,10 +2057,17 @@ a {
 					@media all and (max-width: 1280px) {
 						margin-bottom: 6px;
 					}
+					@media all and (max-width: 960px) {
+						font-size: 14px;
+						margin-bottom: 4px;
+					}
 				}
 				.number {
 					font-size: 25px;
 					color: #d5d5d5;
+					@media all and (max-width: 960px) {
+						font-size: 19px;
+					}
 					a {
 						text-decoration: none;
 						color: #d5d5d5;
@@ -1827,18 +2090,28 @@ a {
 			}
 			.site-name {
 				text-align: center;
+				@media all and (max-width: 960px) {
+					order: 3;
+				}
 				.site-name-in {
 					font-size: 13px;
 					color: #ccc;
 					text-transform: uppercase;
 					padding-top: 30px;
 					opacity: 0.4;
+					@media all and (max-width: 960px) {
+						padding-top: 10px;
+						padding-bottom: 26px;
+					}
 				}
 			}
 			.mail {
 				padding-top: 26px;
 				@media all and (max-width: 1280px) {
 					padding-top: 0;
+				}
+				@media all and (max-width: 960px) {
+					order: 2;
 				}
 				.name {
 					font-size: 14px;
@@ -1847,6 +2120,7 @@ a {
 					text-transform: uppercase;
 					@media all and (max-width: 1280px) {
 						display: none;
+						margin-bottom: 4px;
 					}
 				}
 				.link {
@@ -1861,6 +2135,10 @@ a {
 					}
 				}
 				.social-network {
+					@media all and (max-width: 960px) {
+						margin-bottom: 16px;
+						opacity: 0.6;
+					}
 					&-name {
 						color: #ccc;
 						font-size: 14px;

@@ -5,16 +5,24 @@ $(function(){
     var menuTop = $('.js-m-top-clone').clone();
     $('.js-m-top-add').append(menuTop);
 
-
-
-
     var socialClone = $('.js-social-clone').clone();
     var mailClone = $('.js-mail-clone').clone();
 
     $('.js-cont-append').append(mailClone);
-
     $('.js-append-soc').next().append(socialClone);
 
+
+
+
+    $('.js-about').on('click',function(){
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).next().show();
+        } else {
+            $(this).removeClass('active');
+            $(this).next().hide();
+        }
+    });
 
 
 
