@@ -18,9 +18,15 @@ $(function(){
     var menuTop = $('.js-m-top-clone').clone();
     var socialClone = $('.js-social-clone').clone();
     var mailClone = $('.js-mail-clone').clone();
+    var thumbProd = $('.js-clone-thumb').clone();
+    var nameProd = $('.js-clone-name-prod').clone();
+
+
     $('.js-m-top-add').prepend('<ul class="item-vendor"><li><a href="#">Бренды</a></li></ul>').prepend(menuTop);
     $('.js-cont-append').append(mailClone);
     $('.js-append-soc').next().append(socialClone);
+    $('.js-append-thumb').append(thumbProd);
+    $('.js-append-name-prod').append(nameProd);
 
 
     $(document).on('click','.js-menu-popup',function(){
@@ -43,6 +49,15 @@ $(function(){
         $(this).addClass('active');    
     });
 
+    $('.js-open-btn-prod').on('click',function(){
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $('.js-open-body-prod').addClass('active');
+        } else {
+            $(this).removeClass('active');
+            $('.js-open-body-prod').removeClass('active');
+        }
+    });
 
 
     $('.js-about').on('click',function(){
@@ -85,7 +100,7 @@ $(function(){
     });
 
 
-    $('.js-thumbs-prod li').on('click',function(){
+    $(document).on('click','.js-thumbs-prod li',function(){
         $('.js-thumbs-prod li').removeClass('active');
         $(this).addClass('active');
 

@@ -74,6 +74,14 @@ h1 {
 	padding: 0;
 	margin: 0 0 100px;
 	text-transform: uppercase;
+	@media all and (max-width: 1440px) {
+		font-size: 35px;
+		margin: 0 0 60px;
+	}
+	@media all and (max-width: 800px) {
+		font-size: 24px;
+		margin: 0 0 20px;
+	}
 	&.center {
 		font-style: 45px;
 		text-transform: uppercase;
@@ -81,6 +89,16 @@ h1 {
 		padding: 120px 140px 0;
 		margin: 0 0 84px 0;
 		font-weight: 300;
+		@media all and (max-width: 1440px) {
+			font-size: 35px;
+			padding: 88px 30px 0;
+			margin-bottom: 40px;
+		}
+		@media all and (max-width: 800px) {
+			font-size: 24px;
+			padding: 50px 30px 0;
+			margin-bottom: 20px;
+		}
 	}
 	&.contacts-form-title {
 		text-align: center;
@@ -89,6 +107,15 @@ h1 {
 		font-weight: 300;
 		color: #202121;
 		padding-top: 120px;
+		@media all and (max-width: 1440px) {
+			font-size: 35px;
+			padding-top: 80px;
+			margin-bottom: 0;
+		}
+		@media all and (max-width: 800px) {
+			font-size: 24px;
+			padding-top: 40px;
+		}
 	}
 }
 
@@ -100,6 +127,28 @@ h2 {
 		font-size: 45px;
 		font-weight: 300;
 		color: #202121;
+		@media all and (max-width: 1440px) {
+			font-size: 35px;
+		}
+		@media all and (max-width: 800px) {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+	}
+	&.contacts-form-title2 {
+		font-size: 35px;
+		color: #000;
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 70px;
+		@media all and (max-width: 1440px) {
+			font-size: 24px;
+		}
+		@media all and (max-width: 800px) {
+			font-size: 19px;
+			margin-bottom: 0;
+			padding-bottom: 20px;
+		}
 	}
 }
 h3 { font-size: 36px; }
@@ -132,7 +181,7 @@ a {
 
 .site-wrap {
 	padding-top: 132px;
-	@media all and (max-width: 960px) {
+	@media all and (max-width: 800px) {
 		padding-top: 83px;
 	}
 	.site-header {
@@ -147,7 +196,7 @@ a {
 		border-bottom: 1px solid #ebeeee;
 		height: 132px;
 		align-items: center;
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			height: 83px;
 		}
 		&-left {
@@ -157,7 +206,7 @@ a {
 			align-items: center;
 			justify-content: center;
 			border-right: 1px solid #ebeeee;
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				position: absolute;
 				top: 0;
 				left: 50%;
@@ -186,7 +235,7 @@ a {
 					text-transform: uppercase;
 					cursor: pointer;
 					padding: 30px 0 30px 36px;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						width: 60px;
 						font-size: 0;
 						line-height: 0;
@@ -208,7 +257,7 @@ a {
 					z-index: 100;
 					padding: 50px 40px 30px 60px;
 					margin-top: 60px;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						transform: translateX(-150%);
 						transition: transform 0.35s ease;
 					}					
@@ -217,7 +266,7 @@ a {
 						margin: 0;
 						list-style: none;
 						li {
-							@media all and (max-width: 960px) {
+							@media all and (max-width: 800px) {
 								border-bottom: 1px solid #fff;
 							}
 							a {
@@ -227,7 +276,7 @@ a {
 								text-decoration: none;
 								text-transform: uppercase;
 								padding-bottom: 28px;
-								@media all and (max-width: 960px) {
+								@media all and (max-width: 800px) {
 									padding: 16px 30px;
 									font-size: 17px;
 								}
@@ -256,13 +305,13 @@ a {
 								background: url('../images/item-vendor.png') right 22px top 21px no-repeat;
 							}
 						}
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: block;
 						}
 					}
 					&-bg-mob {
 						display: none;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: block;
 							height: 60px;
 							position: fixed;
@@ -275,7 +324,7 @@ a {
 					}
 					&-close {
 						display: none;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: block;
 							position: fixed;
 							right: 0;
@@ -307,7 +356,7 @@ a {
 						display: block;
 					}
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					&.active {
 						.menu-burger-body {
 							transform: translateX(0%);
@@ -355,7 +404,7 @@ a {
 				right: 0;
 				top: 0;
 				bottom: 0;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					z-index: 100;
 				}
 				&-open {
@@ -366,7 +415,7 @@ a {
 					position: absolute;
 					top: 57px;
 					right: 30px;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						width: 60px;
 						height: 83px;
 						border-left: 1px solid #ebeeee;
@@ -391,7 +440,7 @@ a {
 						width: 20px;
 						height: 20px;
 						background: url('../images/search.svg') 0 0 no-repeat;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							height: 83px;
 							width: 58px;
 							padding: 0;
@@ -414,7 +463,7 @@ a {
 						&:-ms-input-placeholder { color: #b7b7b7; }
 						&::-ms-input-placeholder { color: #b7b7b7; }
 						&::placeholder { color: #b7b7b7; } 
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							padding-right: 70px;
 							font-size: 18px;
 							padding-top: 4px;
@@ -434,7 +483,7 @@ a {
 						width: 132px;
 						height: 100%;
 						background: #f7f7f7;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							background: none;
 							width: 60px;
 							border-left: none;
@@ -448,7 +497,7 @@ a {
 							width: 1px;
 							height: 40px;
 							background: #b2b2b2;
-							@media all and (max-width: 960px) {
+							@media all and (max-width: 800px) {
 								height: 30px;
 								top: 30px;
 								left: 30px;
@@ -474,7 +523,7 @@ a {
 			font-size: 21px;
 			font-weight: bold;
 			border-left: 1px solid #ebeeee;
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				display: none;
 			}
 			a {
@@ -496,7 +545,7 @@ a {
 			padding-left: 30px;
 			padding-right: 30px;
 		}
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			position: fixed;
 			top: 0;
 			bottom: 0;
@@ -512,10 +561,9 @@ a {
 			}
 		}
 		&-name {
-			white-space: pre;
 			margin-right: 58px;
 			text-transform: uppercase;
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -554,12 +602,13 @@ a {
 					border-right: 5px solid #000000;
 					z-index: 1;
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					display: block;
 				}
 			}
 			.name-pc {
-				@media all and (max-width: 960px) {
+				white-space: pre;
+				@media all and (max-width: 800px) {
 					display: none;
 				}				
 			}
@@ -571,7 +620,7 @@ a {
 				top: 0;
 				left: 0;
 				z-index: 1000;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					display: block;
 				}
 			}
@@ -599,7 +648,7 @@ a {
 				&:before {
 					transform: rotate(-45deg);
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					display: block;
 				}
 			}
@@ -613,7 +662,7 @@ a {
 			@media all and (max-width: 1440px) {
 				margin-right: 34px;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				display: none;
 			}			
 		}
@@ -625,7 +674,7 @@ a {
 				list-style: none;
 				display: flex;
 				justify-content: space-between;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					position: fixed;
 					top: 60px;
 					left: 0;
@@ -650,7 +699,7 @@ a {
 				}
 				> li {
 					width: 100%;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						width: 36px;
 						margin: 0;
 						text-align: center;
@@ -665,7 +714,7 @@ a {
 						> a {
 							&:after {
 								display: block;
-								@media all and (max-width: 960px) {
+								@media all and (max-width: 800px) {
 									display: none;
 								}
 							}
@@ -690,14 +739,14 @@ a {
 							left: 50%;
 							margin-left: -5px;
 							margin-top: -12px;
-							@media all and (max-width: 960px) {
+							@media all and (max-width: 800px) {
 								display: none;
 							}
 						}
 						&:hover {
 							color: #000;
 						}
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: inline-block;
 							vertical-align: top;
 							color: #000;
@@ -728,7 +777,7 @@ a {
 						border-bottom: 1px solid #ebeeee;
 						z-index: 10;
 						padding: 0 0 20px 0;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							position: fixed;
 							top: 218px;
 							left: 0;
@@ -750,7 +799,7 @@ a {
 								padding-left: 40px;
 								width: 300px;
 							}
-							@media all and (max-width: 960px) {
+							@media all and (max-width: 800px) {
 								display: none;
 							}
 							&.number {
@@ -770,7 +819,7 @@ a {
 							justify-content: flex-start;
 							width: 100%;
 							max-width: 1245px;
-							@media all and (max-width: 960px) {
+							@media all and (max-width: 800px) {
 								flex-direction: column;
 								justify-content: flex-start;
 								align-items: flex-start;
@@ -779,7 +828,7 @@ a {
 							li {
 								width: 20%;
 								padding: 0 10px 20px 0;
-								@media all and (max-width: 960px) {
+								@media all and (max-width: 800px) {
 									width: 100%;
 									padding: 0 30px;
 									text-align: left;
@@ -788,7 +837,7 @@ a {
 									color: #202121;
 									text-decoration: none;
 									font-weight: 300;
-									@media all and (max-width: 960px) {
+									@media all and (max-width: 800px) {
 										display: block;
 										padding: 10px 0;
 										font-size: 17px;
@@ -801,12 +850,22 @@ a {
 							}
 						}
 					}
-					&:hover, &.active {
+					&:hover {
 						> a {
 							color: #000;
 						}
 						> div {
 							display: flex;
+						}
+					}
+					&.active {
+						> a {
+							color: #000;
+						}
+						> div {
+							@media all and (max-width: 800px) {
+								display: flex;
+							}
 						}
 					}
 				}
@@ -826,7 +885,7 @@ a {
 					@media all and (max-width: 1440px) {
 						height: 480px;
 					}
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						height: 380px;
 					}
 					@media all and (max-width: 640px) {
@@ -857,7 +916,7 @@ a {
 							padding-top: 60px;
 							padding-bottom: 10px;
 						}
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							font-size: 26px;
 							padding-top: 40px;
 						}
@@ -881,7 +940,7 @@ a {
 							font-size: 45px;
 							padding-left: 50px;
 						}
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							font-size: 34px;
 						}
 						@media all and (max-width: 640px) {
@@ -903,7 +962,7 @@ a {
 			width: 100%;
 			text-align: center;
 			z-index:10;
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				bottom: 14px;
 			}
 			@media all and (max-width: 640px) {
@@ -940,7 +999,7 @@ a {
 			@media all and (max-width: 1440px) {
 				font-size: 35px;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				font-size: 24px;
 			}
 		}
@@ -950,7 +1009,7 @@ a {
 				&-nav {
 					margin-bottom: 56px;
 					text-align: center;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						margin-bottom: 26px;
 					}
 					span {
@@ -960,7 +1019,7 @@ a {
 						color: #a3a3a3;
 						border-bottom: 2px solid transparent;
 						margin: 0 20px;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							font-size: 13px;
 							margin: 0 6px;
 						}
@@ -1097,7 +1156,7 @@ a {
 		@media all and (max-width: 1440px) {
 			margin-bottom: 100px;
 		}
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			margin-bottom: 70px;
 		}
 		&-title {
@@ -1111,7 +1170,7 @@ a {
 				font-size: 35px;
 				margin-bottom: 28px;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				font-size: 24px;
 				margin-bottom: 16px;
 			}
@@ -1130,7 +1189,7 @@ a {
 					@media all and (max-width: 1280px) {
 						padding-top: 50px;
 					}
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						padding-top: 28px;
 					}
 					.review-body-img {
@@ -1237,9 +1296,18 @@ a {
 		flex-wrap: wrap;
 		margin-bottom: 32px;
 		padding: 0 60px;
+		@media all and (max-width: 1440px) {
+			padding: 0 30px;
+		}
+		@media all and (max-width: 640px) {
+			padding: 0 20px;
+		}
 		&-filed {
 			width: 16.6666%;
 			position: relative;
+			@media all and (max-width: 1440px) {
+				width: 33.3333%;
+			}
 			&-title {
 				cursor: pointer;
 				border: 1px solid #ccc;
@@ -1256,6 +1324,13 @@ a {
 				&.active {
 					background: #202121 url('../images/ico-filter-h.png') right 22px top 38px no-repeat;
 					color: #fff;
+					@media all and (max-width: 1440px) {
+						background: #202121 url('../images/ico-filter-h.png') right 22px top 32px no-repeat;
+					}
+				}
+				@media all and (max-width: 1440px) {
+					height: 68px;
+					background: #fff url('../images/ico-filter.png') right 22px top 32px no-repeat;
 				}
 			}
 			&-body {
@@ -1331,13 +1406,28 @@ a {
 		flex-wrap: wrap;
 		color: #000;
 		padding: 0 60px 56px;
+		@media all and (max-width: 1440px) {
+			padding: 0 30px 30px;
+		}
+		@media all and (max-width: 640px) {
+			padding: 0 20px 24px;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
 		&-title {
 			font-weight: bold;
 			margin-right: 36px;
+			@media all and (max-width: 640px) {
+				margin-right: 0;
+			}
 		}
 		&-val {
 			display: flex;
 			flex-wrap: wrap;
+			@media all and (max-width: 640px) {
+				display: none;
+			}
 			&-filed {
 				margin-right: 38px;
 				.filed-selected {
@@ -1371,23 +1461,66 @@ a {
 		display: flex;
 		flex-wrap: wrap;
 		padding: 0 30px;
+		@media all and (max-width: 1024px) {
+			padding: 0;
+		}
 		.product-wr {
 			width: 33.33333%;
 			margin-bottom: 50px;
 			text-align: center;
 			padding: 0 30px;
+			@media all and (max-width: 1280px) {
+				width: 50%;
+			}
+			@media all and (max-width: 640px) {
+				width: 100%;
+				padding: 0 20px;
+				margin-bottom: 30px;
+			}
 			&-img {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				height: 360px;
 				margin-bottom: 30px;
+				@media all and (max-width: 1680px) {
+					height: 215px;
+				}
+				@media all and (max-width: 1280px) {
+					height: 320px;
+				}
+				@media all and (max-width: 1024px) {
+					height: 280px;
+				}
+				@media all and (max-width: 640px) {
+					height: auto;
+					margin-bottom: 10px;
+				}
+				img {
+					max-height: 360px;
+					@media all and (max-width: 1680px) {
+						max-height: 215px;
+					}
+					@media all and (max-width: 1280px) {
+						max-height: 320px;
+					}
+					@media all and (max-width: 1024px) {
+						max-height: 280px;
+					}
+					@media all and (max-width: 640px) {
+						max-height: auto;
+					}
+				}
 			}
 			&-title {
 				font-size: 20px;
 				font-weight: bold;
 				margin-bottom: 6px;
 				color: #202121;
+				@media all and (max-width: 640px) {
+					font-size: 17px;
+					line-height: 1.2;
+				}
 				a {
 					color: #202121;
 					text-decoration: none;
@@ -1411,21 +1544,27 @@ a {
 		margin-bottom: 120px;
 		font-size: 19px;
 		color: #000;
+		@media all and (max-width: 1440px) {
+			margin-bottom: 90px;
+		}
+		@media all and (max-width: 640px) {
+			margin-bottom: 40px;
+		}
 		a {
 			color: #000;
 			text-decoration: none;
 			margin: 0 20px;
-			&.prev {
-
-			}
-			&.next {
-				
+			@media all and (max-width: 640px) {
+				margin: 0 10px;
 			}
 		}
 		span {
 			margin: 0 20px;
 			padding-bottom: 4px;
 			border-bottom: 2px solid #444;
+			@media all and (max-width: 640px) {
+				margin: 0 10px;
+			}
 		}
 	}
 
@@ -1434,40 +1573,178 @@ a {
 		display: flex;
 		padding: 50px 68px 40px 68px;
 		margin: 0 60px 50px;
+		@media all and (max-width: 1440px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		@media all and (max-width: 1366px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@media all and (max-width: 1024px) {
+			margin-bottom: 40px;
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+		@media all and (max-width: 800px) {
+			margin-bottom: 22px;
+			flex-direction: column;
+			padding: 0;
+		}
 		&-img {
 			width: 1130px;
+			@media all and (max-width: 1024px) {
+				width: auto;
+				padding-right: 30px;
+				padding-top: 40px;
+			}
+			@media all and (max-width: 1024px) {
+				width: 100%;
+			}
+			@media all and (max-width: 800px) {
+				padding: 0;
+			}
 			h1 {
 				color: #202121;
 				font-size: 30px;
 				line-height: 1;
 				font-weight: 300;
 				margin: 0 0 18px;
+				@media all and (max-width: 1024px) {
+					font-size: 24px;
+					line-height: 1.2;
+				}
+				@media all and (max-width: 800px) {
+					font-size: 17px;
+					font-weight: bold;
+					margin-bottom: 8px;
+				}
 			}
-			.product-sldier-img {
-				
+			.product-card-name {
+				.product-card-params-name {
+					display: none;
+				}
+				.product-card-params-rating {
+					display: none;
+				}
+				@media all and (max-width: 800px) {
+					background: #fff;
+					text-align: center;
+					padding: 26px 30px 22px;
+					.product-card-params-name {
+						display: block;
+						font-size: 17px;
+						margin-bottom: 10px;
+					}
+					.product-card-params-rating {
+						margin: 0;
+						display: block;
+					}
+					.tpl-stars {
+						margin: 0 auto;
+					}
+				}
+			}
+			.product-card-params-thumbs {
+				display: none;
+				padding-top: 10px;
+				margin-bottom: 30px;
+				@media all and (max-width: 1024px) {
+					display: block;
+				}
+				ul {
+					justify-content: center;
+					li {
+						@media all and (max-width: 800px) {
+							width: 8px !important;
+							height: 8px !important;
+							border-radius: 50% !important;
+							background: #5399ea !important;
+							margin: 0 2px !important;
+							&.active {
+								background: #202121 !important;
+							}
+							&:after {
+								display: none !important;
+							}
+						}
+						img {
+							@media all and (max-width: 800px) {
+								display: none;
+							}
+						}
+					}
+				}
 			}
 		}
 		&-foto {
 			position: relative;
 			height: 540px;
+			@media all and (max-width: 1024px) {
+				height: 294px;
+			}
+			@media all and (max-width: 640px) {
+				height: 180px;
+			}
 			//background: url('../images/bg-product.png') 0 0 no-repeat;
 			.images {
 				> div {
 					position: absolute;
 					top: 0;
 					left: 0;
+					@media all and (max-width: 800px) {
+						width: 100%;
+						text-align: center;
+					}
+					@media all and (max-width: 640px) {
+						top: 16px;
+					}
+					img {
+						max-height: 540px;
+						@media all and (max-width: 1024px) {
+							max-height: 294px;
+						}
+						@media all and (max-width: 640px) {
+							max-height: 180px;
+						}
+					}
 				}
 			}
 			.coincidence {
 				position: absolute;
 				top: 410px;
-				left: 448px;
+				left: 50%;
+				margin-left: -106px;
 				text-transform: uppercase;
 				color: #202121;
 				font-size: 20px;
 				font-weight: bold;
 				padding-bottom: 8px;
 				z-index: 2;
+				@media all and (max-width: 1680px) {
+					top: 310px;
+				}
+				@media all and (max-width: 1366px) {
+					top: 280px;
+				}
+				@media all and (max-width: 1024px) {
+					top: 210px;
+					font-size: 18px;
+					margin-left: -102px;
+				}
+				@media all and (max-width: 800px) {
+					padding-left: 10px;
+					padding-right: 10px;
+					margin-left: -22px;
+					font-size: 14px;
+					padding-bottom: 2px;
+					span {
+						display: none;
+					}
+				}
+				@media all and (max-width: 640px) {
+					top: 150px;
+				}
 				&:after {
 					content: '';
 					display: block;
@@ -1493,6 +1770,19 @@ a {
 		&-params {
 			flex: auto;
 			padding: 0 0 60px 115px;
+			@media all and (max-width: 1024px) {
+				flex: 0 0 300px;
+				padding-left: 30px;
+				padding-bottom: 20px;
+				border-left: 1px solid #e6e6e6;
+				padding-top: 40px;
+			}
+			@media all and (max-width: 800px) {
+				flex: auto;
+				padding: 0;
+				margin: 0;
+				border-left: none;
+			}
 			&-name {
 				text-transform: uppercase;
 				color: #202121;
@@ -1500,31 +1790,43 @@ a {
 				line-height: 1;
 				font-weight: 300;
 				margin-bottom: 10px;
+				@media all and (max-width: 1024px) {
+					font-size: 24px;
+				}
+				@media all and (max-width: 800px) {
+					display: none;
+				}
 			}
 			&-rating {
 				margin-bottom: 18px;
-				.tpl-stars {
-					width: 110px;
-					height: 19px;
-					background: url('../images/star.png') 0 0 repeat-x;
-					.tpl-rating {
-						height: 19px;
-						background: url('../images/star-active.png') 0 0 repeat-x;
-					}
+				@media all and (max-width: 1024px) {
+					margin-bottom: 30px;
+				}
+				@media all and (max-width: 800px) {
+					display: none;
 				}
 			}
 			&-desc {
 				color: #000;
 				font-size: 19px;
 				margin-bottom: 34px;
+				@media all and (max-width: 1024px) {
+					font-size: 17px;
+				}
+				@media all and (max-width: 800px) {
+					padding: 24px 30px 10px;
+					border-top: 1px solid #e6e6e6;
+					font-size: 17px;
+					margin-bottom: 14px;
+				}
 				.options-list {
 					padding: 0;
 					margin: 0;
 					list-style: none;
 					li {
 						margin-bottom: 20px;
-						.options-list-name {
-
+						@media all and (max-width: 1024px) {
+							margin-bottom: 14px;
 						}
 						.options-list-val {
 							color: #616161;
@@ -1532,39 +1834,54 @@ a {
 					}
 				}
 			}
-			&-thumbs {
-				ul {
-					padding: 0;
-					margin: 0;
-					list-style: none;
+			.product-card-params-thumbs {
+				@media all and (max-width: 1024px) {
+					display: none;
+				}
+			}
+		}
+		.tpl-stars {
+			width: 110px;
+			height: 19px;
+			background: url('../images/star.png') 0 0 repeat-x;
+			.tpl-rating {
+				height: 19px;
+				background: url('../images/star-active.png') 0 0 repeat-x;
+			}
+		}
+		.product-card-params-thumbs {
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					cursor: pointer;
+					border: 1px solid #e6e6e6;
+					margin: 0 -1px -1px 0;
+					width: 100px;
+					height: 100px;
 					display: flex;
-					flex-wrap: wrap;
-					li {
-						cursor: pointer;
-						border: 1px solid #e6e6e6;
-						margin: 0 -1px -1px 0;
-						width: 100px;
-						height: 100px;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						position: relative;
+					align-items: center;
+					justify-content: center;
+					position: relative;
+					background: #f7f7f7;
+					&:after {
+						content: '';
+						display: block;
+						opacity: 0;
+						height: 3px;
+						width: 100%;
+						position: absolute;
+						bottom: -1px;
+						left: 0;
+						background: #202121;
+						transition: all 0.3s ease;
+					}
+					&.active {
 						&:after {
-							content: '';
-							display: block;
-							opacity: 0;
-							height: 3px;
-							width: 100%;
-							position: absolute;
-							bottom: -1px;
-							left: 0;
-							background: #202121;
-							transition: all 0.3s ease;
-						}
-						&.active {
-							&:after {
-								opacity: 1;
-							}
+							opacity: 1;
 						}
 					}
 				}
@@ -1579,29 +1896,98 @@ a {
 		padding: 140px 140px 124px;
 		margin-bottom: 126px;
 		background: #fff url('../images/bg-card.png') 50% 50% no-repeat;
+		@media all and (max-width: 1280px) {
+			margin-bottom: 80px;
+			padding: 88px 60px 80px;
+			background-size: 324px auto;
+		}
+		@media all and (max-width: 800px) {
+			padding: 0;
+			background: none;
+			margin-bottom: 40px;
+		}
 		&-title {
 			color: #202121;
 			font-size: 45px;
 			text-transform: uppercase;
 			margin-bottom: 38px;
+			position: relative;
+			&.active {
+				&:after {
+					transform: rotate(180deg);
+				}
+			}
+			&:after {
+				content: '';
+				display: none;
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				width: 15px;
+				height: 7px;
+				background: #faf9f9 url('../images/ico-about.png') 50% 0 no-repeat;
+				@media all and (max-width: 800px) {
+					display: block;
+				}
+			}
+			@media all and (max-width: 1280px) {
+				font-size: 35px;
+				margin-bottom: 24px;
+			}
+			@media all and (max-width: 800px) {
+				font-size: 19px;
+				border-bottom: 1px solid #f7f8f8;
+				padding: 22px 50px 16px 30px;
+				margin-bottom: 0;
+			}
 		}
 		&-body {
+			display: block !important;
 			color: #616161;
 			font-size: 24px;
 			line-height: 1.6;
+			@media all and (max-width: 1280px) {
+				font-size: 19px;
+				line-height: 1.4;
+			}
+			@media all and (max-width: 800px) {
+				display: none !important;
+				padding: 24px 30px;
+				&.active {
+					display: block !important;
+				}
+			}
 		}
 	}
 
 	.accessories {
 		margin-bottom: 130px;
 		border-bottom: 1px solid #ebeeee;
+		@media all and (max-width: 1280px) {
+			margin-bottom: 100px;
+		}
+		@media all and (max-width: 640px) {
+			padding: 0 30px;
+		}
 		&-title {
 			text-align: center;
 			margin-bottom: 50px;
+			@media all and (max-width: 1280px) {
+				margin-bottom: 36px;
+			}
+			@media all and (max-width: 800px) {
+				margin-bottom: 18px;
+			}
 			h2 {
 				color: #202121;
 				font-weight: 300;
 				font-size: 45px;
+				@media all and (max-width: 1280px) {
+					font-size: 35px;
+				}
+				@media all and (max-width: 800px) {
+					font-size: 24px;
+				}
 			}
 		}
 	}
@@ -1612,15 +1998,44 @@ a {
 		padding: 0 70px;
 		font-weight: 300;
 		margin-bottom: 140px;
+		@media all and (max-width: 1440px) {
+			padding: 0 60px;
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+		@media all and (max-width: 800px) {
+			padding: 0;
+			margin-bottom: 0;
+		}
 		.page-contacts {
 			width: 50%;
 			padding: 0 70px;
+			@media all and (max-width: 1680px) {
+				padding: 0 20px;
+			}
+			@media all and (max-width: 1440px) {
+				width: 100%;
+				padding: 0;
+			}
+			@media all and (max-width: 800px) {
+				text-align: center;
+				border-top: 1px solid #ebeeee;
+				padding: 36px 30px 20px;
+			}
 			&-info {
 				color: #000;
 				font-size: 24px;
 				margin-bottom: 20px;
+				@media all and (max-width: 800px) {
+					font-size: 19px;
+					margin-bottom: 12px;
+				}
 				&-title {
 					color: #909090;
+					@media all and (max-width: 800px) {
+						display: block;
+						line-height: 1.2;
+					}
 				}
 				&-val {
 					a.tel {
@@ -1636,6 +2051,12 @@ a {
 				background: #ccc;
 				height: 500px;
 				padding-top: 4px;
+				@media all and (max-width: 1440px) {
+					margin-bottom: 80px;
+				}
+				@media all and (max-width: 800px) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -1646,25 +2067,55 @@ a {
 		margin: 0 0 126px;
 		border-top: 1px solid #ebeeee;
 		border-bottom: 1px solid #ebeeee;
+		@media all and (max-width: 1440px) {
+			flex-direction: column;
+			margin-bottom: 90px;
+		}
+		@media all and (max-width: 800px) {
+			margin-bottom: 40px;
+		}
 		&-desc {
 			width: 50%;
 			padding: 90px 90px 90px 140px;
+			@media all and (max-width: 1440px) {
+				width: 100%;
+				padding: 88px 60px 70px;
+			}
+			@media all and (max-width: 800px) {
+				padding: 46px 30px 38px;
+				text-align: center;
+			}
 			&-name {
 				color: #000;
 				font-size: 45px;
 				font-weight: bold;
 				line-height: 1;
 				margin-bottom: 40px;
+				@media all and (max-width: 800px) {
+					font-size: 24px;
+					margin-bottom: 18px;
+				}
 			}
 			&-info {
 				color: #000;
 				font-size: 26px;
 				margin-bottom: 22px;
 				font-weight: 300;
+				@media all and (max-width: 800px) {
+					font-size: 19px;
+					margin-bottom: 14px;
+				}
 				&-title {
 					color: #909090;
+					@media all and (max-width: 800px) {
+						display: block;
+						line-height: 1;
+					}
 				}
 				&-val {
+					@media all and (max-width: 800px) {
+						display: block;
+					}
 					a.tel {
 						color: #000;
 						text-decoration: none;
@@ -1678,6 +2129,13 @@ a {
 		&-map {
 			width: 50%;
 			background-color: #ccc;
+			@media all and (max-width: 1440px) {
+				width: 100%;
+				height: 320px;
+			}
+			@media all and (max-width: 800px) {
+				display: none;
+			}
 		}
 	}
 
@@ -1689,8 +2147,14 @@ a {
 		max-width: 990px;
 		margin: 0 auto 140px;
 		font-weight: 300;
+		@media all and (max-width: 800px) {
+			margin-bottom: 40px;
+		}
 		&-filed {
 			margin-bottom: 30px;
+			@media all and (max-width: 800px) {
+				margin-bottom: 20px;
+			}
 			&-name {
 				margin-bottom: 4px;
 				font-size: 19px;
@@ -1702,10 +2166,17 @@ a {
 			&.type-text {
 				width: 33.333%;
 				padding: 0 15px;
+				@media all and (max-width: 800px) {
+					width: 100%;
+					padding: 0 20px;
+				}
 			}
 			&.type-textarea, &.type-html, &.type-button {
 				width: 100%;
 				padding: 0 15px;
+				@media all and (max-width: 800px) {
+					padding: 0 20px;
+				}
 			}
 			&.type-button {
 				text-align: center;
@@ -1715,6 +2186,9 @@ a {
 				color: #a1a1a1;
 				text-align: center;
 				margin-bottom: 42px;
+				@media all and (max-width: 800px) {
+					margin-bottom: 20px;
+				}
 				a {
 					color: #000;
 					text-decoration: underline;
@@ -1739,6 +2213,9 @@ a {
 					&:-ms-input-placeholder { color: #a1a1a1; }
 					&::-ms-input-placeholder { color: #a1a1a1; }
 					&::placeholder { color: #a1a1a1; } 
+					@media all and (max-width: 800px) {
+						padding: 12px 20px;
+					}
 					&.error {
 						border: 1px solid #c00;
 					}
@@ -1761,6 +2238,10 @@ a {
 					display: inline-block;
 					vertical-align: top;
 					min-width: 320px;
+					@media all and (max-width: 800px) {
+						font-size: 17px;
+						padding: 20px 20px 14px;
+					}
 				}
 			}
 		}
@@ -1770,6 +2251,13 @@ a {
 		color: #a3a3a3;
 		font-size: 19px;
 		padding: 30px 80px 30px 60px;
+		@media all and (max-width: 1680px) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		@media all and (max-width: 800px) {
+			display: none;
+		}
 		span {
 			padding: 0 10px;
 		}
@@ -1781,6 +2269,10 @@ a {
 
 	.block-cooperetion {
 		display: flex;
+		@media all and (max-width: 1440px) {
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
 		&-left {
 			width: 50%;
 			background: #f7f7f7;
@@ -1788,6 +2280,17 @@ a {
 			color: #000;
 			font-size: 19px;
 			line-height: 1.44;
+			@media all and (max-width: 1680px) {
+				padding: 110px 60px 140px 60px;
+			}
+			@media all and (max-width: 1440px) {
+				width: 100%;
+				padding-top: 90px;
+				padding-bottom: 80px;
+			}
+			@media all and (max-width: 800px) {
+				padding: 50px 30px;
+			}
 			h1 {
 				color: #202121;
 				font-size: 45px;
@@ -1795,12 +2298,23 @@ a {
 				padding: 0;
 				margin: 0 0 40px;
 				font-weight: 300;
+				@media all and (max-width: 1440px) {
+					font-size: 35px;
+				}
+				@media all and (max-width: 800px) {
+					font-size: 24px;
+					margin-bottom: 30px;
+				}
 			}
 			h2 {
 				color: #000;
 				padding: 22px 0 0;
 				margin: 0 0 20px;
 				font-size: 24px;
+				@media all and (max-width: 800px) {
+					font-size: 19px;
+					margin-bottom: 14px;
+				}
 			}
 			ul {
 				padding: 0;
@@ -1822,6 +2336,17 @@ a {
 			color: #e7e7e7;
 			font-weight: 300;
 			padding: 150px 120px 120px;
+			@media all and (max-width: 1680px) {
+				padding: 150px 30px 120px;
+			}
+			@media all and (max-width: 1440px) {
+				width: 100%;
+				padding-top: 90px;
+				padding-bottom: 90px;
+			}
+			@media all and (max-width: 800px) {
+				padding: 50px 20px 40px;
+			}
 			a {
 				color: #e7e7e7;
 			}
@@ -1829,24 +2354,44 @@ a {
 				color: #f45f22;
 			}
 			.form-cooperetion {
+				@media all and (max-width: 1440px) {
+					width: 100%;
+					max-width: 680px;
+					margin: 0 auto;
+				}
 				&-title {
 					line-height: 1.5;
 					font-size: 24px;
 					margin-bottom: 50px;
 					text-align: center;
+					@media all and (max-width: 800px) {
+						font-size: 20px;
+						line-height: 1.2;
+						margin-bottom: 36px;
+					}
 				}
 				&-fields {
 					display: flex;
 					flex-wrap: wrap;
 					&-field {
 						margin-bottom: 22px;
+						@media all and (max-width: 800px) {
+							margin-bottom: 14px;
+						}
 						&.type-text, &.type-select {
 							width: 50%;
 							padding: 0 20px;
+							@media all and (max-width: 800px) {
+								width: 100%;
+								padding: 0;
+							}
 						}
 						&.type-textarea, &.type-html, &.type-button {
 							width: 100%;
 							padding: 0 20px;
+							@media all and (max-width: 800px) {
+								padding: 0;
+							}
 						}
 						&.type-button {
 							text-align: center;
@@ -1855,6 +2400,9 @@ a {
 						&-name {
 							font-size: 19px;
 							margin-bottom: 10px;
+							@media all and (max-width: 1680px) {
+								font-size: 17px;
+							}
 						}
 						&-val {
 							input[type="text"], input[type="tel"], input[type="email"], textarea {
@@ -1873,8 +2421,14 @@ a {
 								&:-ms-input-placeholder { color: #7d7e7e; }
 								&::-ms-input-placeholder { color: #7d7e7e; }
 								&::placeholder { color: #7d7e7e; } 
+								@media all and (max-width: 800px) {
+									padding: 12px 20px;
+								}
 								&.error {
 									border: 1px solid #c00;
+								}
+								&:focus {
+									border: 1px solid #818181;
 								}
 							}
 							button {
@@ -1890,9 +2444,14 @@ a {
 								font-family: 'Circe';
 								font-weight: 300;
 								color: #202121;
-								font-size: 17px;
 								text-transform: uppercase;
 								font-weight: bold;
+								@media all and (max-width: 800px) {
+									padding: 16px 20px 12px 20px;
+									font-size: 17px;
+									width: 100%;
+									display: block;
+								}
 							}
 							select {
 								display: block;
@@ -1915,6 +2474,10 @@ a {
 								/* for IE */
 								-ms-appearance: none;
 								appearance: none!important;
+								@media all and (max-width: 800px) {
+									padding: 14px 36px 14px 20px;
+									background-position: right 20px top 20px;
+								}
 								&::-ms-expand {
 									display: none;
 								}
@@ -1932,12 +2495,25 @@ a {
 		justify-content: flex-end;
 		margin-bottom: 50px;
 		padding: 0 215px;
+		@media all and (max-width: 1024px) {
+			padding: 0 30px;
+			margin-bottom: 40px;
+		}
+		@media all and (max-width: 800px) {
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
 		&-title {
 			text-transform: uppercase;
 			color: #202121;
 			font-size: 19px;
 			font-weight: 300;
 			padding: 8px 30px 0 0;
+			@media all and (max-width: 800px) {
+				padding: 0;
+				font-size: 16px;
+				margin-bottom: 8px;
+			}
 		}
 		&-body {
 			.ya-share2__list>.ya-share2__item {
@@ -1963,11 +2539,8 @@ a {
 	.block-ico-top {
 		display: flex;
 		flex-wrap: wrap;
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			flex-direction: column;
-		}
-		&.inner {
-			border-top: 1px solid #e6eaea;
 		}
 		> div {
 			display: flex;
@@ -1986,7 +2559,7 @@ a {
 			@media all and (max-width: 1280px) {
 				width: 33.3333%;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				width: 100%;
 				flex-direction: row;
 				text-align: left;
@@ -2000,7 +2573,7 @@ a {
 			}
 			.img {
 				margin-bottom: 28px;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					margin: 0;
 					min-width: 60px;
 					padding-right: 10px;
@@ -2016,7 +2589,7 @@ a {
 				font-weight: normal;
 				max-width: 200px;
 				margin: 0 auto;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					max-width: 100%;
 					margin: 0;
 				}
@@ -2029,7 +2602,7 @@ a {
 		@media all and (max-width: 1440px) {
 			margin-bottom: 80px;
 		}
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			margin-bottom: 40px;
 		}
 		@media all and (max-width: 640px) {
@@ -2050,7 +2623,7 @@ a {
 				min-height: 280px;
 				justify-content: center;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				min-height: 200px;
 				padding-bottom: 16px;
 			}
@@ -2072,7 +2645,7 @@ a {
 				height: 65px;
 				position: relative;
 				transition: all 0.3s ease;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					height: 40px;
 				}
 				@media all and (max-width: 640px) {
@@ -2122,7 +2695,7 @@ a {
 		@media all and (max-width: 1280px) {
 			padding-bottom: 80px;
 		}
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			padding-bottom: 44px;
 		}
 		&-title {
@@ -2145,7 +2718,7 @@ a {
 		@media all and (max-width: 1440px) {
 			min-height: 480px;
 		}
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			min-height: auto;
 		}
 		&-title {
@@ -2172,7 +2745,7 @@ a {
 				height: 7px;
 				background: #faf9f9 url('../images/ico-about.png') 50% 0 no-repeat;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				display: block;
 			}
 		}
@@ -2188,7 +2761,7 @@ a {
 			max-width: 790px;
 			margin: 0 auto;
 			padding: 96px 0;
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				display: none;
 				padding: 20px 30px;
 				text-align: left;
@@ -2201,7 +2774,7 @@ a {
 		justify-content: space-between;
 		font-family: 'Circe';
 		font-weight: 300;
-		@media all and (max-width: 960px) {
+		@media all and (max-width: 800px) {
 			flex-direction: column;
 			align-items: flex-start;
 		}
@@ -2220,7 +2793,7 @@ a {
 				text-align: left;
 				padding: 48px 20px;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				width: 100%;
 				border-left: none;
 				border-bottom: 1px solid #e6eaea;
@@ -2236,7 +2809,7 @@ a {
 				@media all and (max-width: 1280px) {
 					margin-right: 18px;
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					min-width: 70px;
 				}
 			}
@@ -2261,7 +2834,7 @@ a {
 				margin-bottom: 0;
 				padding: 40px 30px;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				padding: 0;
 			}
 			.menu-bot {
@@ -2274,12 +2847,12 @@ a {
 					justify-content: center;
 					width: 100%;
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					flex-direction: column;
 				}
 				> li {
 					padding: 0 20px;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						padding: 0;
 						border-bottom: 1px solid #3d3e3e;
 					}
@@ -2288,14 +2861,14 @@ a {
 						font-size: 14px;
 						color: #ccc;
 						text-transform: uppercase;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: block;
 							padding: 16px 50px 16px 30px;
 						}
 					}
 					&.hasclass {
 						display: none;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: block;
 						}
 						> a {
@@ -2323,7 +2896,7 @@ a {
 						margin: 0;
 						list-style: none;
 						border-top: 1px solid #3d3e3e;
-						@media all and (max-width: 960px) {
+						@media all and (max-width: 800px) {
 							display: none;
 						}
 						li {
@@ -2377,7 +2950,7 @@ a {
 			@media all and (max-width: 1440px) {
 				padding: 40px 60px;
 			}
-			@media all and (max-width: 960px) {
+			@media all and (max-width: 800px) {
 				flex-direction: column;
 				padding: 0 0;
 				text-align: center;
@@ -2387,7 +2960,7 @@ a {
 				@media all and (max-width: 1280px) {
 					padding-top: 0;
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					order: 1;
 					border-bottom: 1px solid #3d3e3e;
 					margin-bottom: 40px;
@@ -2402,7 +2975,7 @@ a {
 					@media all and (max-width: 1280px) {
 						margin-bottom: 6px;
 					}
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						font-size: 14px;
 						margin-bottom: 4px;
 					}
@@ -2410,7 +2983,7 @@ a {
 				.number {
 					font-size: 25px;
 					color: #d5d5d5;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						font-size: 19px;
 					}
 					a {
@@ -2435,7 +3008,7 @@ a {
 			}
 			.site-name {
 				text-align: center;
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					order: 3;
 				}
 				.site-name-in {
@@ -2444,7 +3017,7 @@ a {
 					text-transform: uppercase;
 					padding-top: 30px;
 					opacity: 0.4;
-					@media all and (max-width: 960px) {
+					@media all and (max-width: 800px) {
 						padding-top: 10px;
 						padding-bottom: 26px;
 					}
@@ -2455,7 +3028,7 @@ a {
 				@media all and (max-width: 1280px) {
 					padding-top: 0;
 				}
-				@media all and (max-width: 960px) {
+				@media all and (max-width: 800px) {
 					order: 2;
 				}
 				.name {
@@ -2480,7 +3053,11 @@ a {
 					}
 				}
 				.social-network {
-					@media all and (max-width: 960px) {
+					display: none;
+					@media all and (max-width: 1280px) {
+						display: block;
+					}
+					@media all and (max-width: 800px) {
 						margin-bottom: 16px;
 						opacity: 0.6;
 					}
@@ -2505,11 +3082,20 @@ a {
 		line-height: 1.6;
 		h1 {
 			margin-bottom: 30px;
+			@media all and (max-width: 800px) {
+				margin-bottom: 10px;
+			}
+		}
+		@media all and (max-width: 1440px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@media all and (max-width: 800px) {
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 }
-
-
 
 
 
