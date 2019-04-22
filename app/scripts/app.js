@@ -21,13 +21,34 @@ $(function(){
     var thumbProd = $('.js-clone-thumb').clone();
     var nameProd = $('.js-clone-name-prod').clone();
 
-
     $('.js-m-top-add').prepend('<ul class="item-vendor"><li><a href="#">Бренды</a></li></ul>').prepend(menuTop);
     $('.js-cont-append').append(mailClone);
     $('.js-append-soc').next().append(socialClone);
     $('.js-append-thumb').append(thumbProd);
     $('.js-append-name-prod').append(nameProd);
 
+    $('.js-mob-filter').on('click',function(){
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $('.js-mob-filter-show').addClass('active');
+        } else {
+            $(this).removeClass('active');
+            $('.js-mob-filter-show').removeClass('active');
+        }
+    });
+
+    $('.js-menu-bot .hasclass > a').on('click',function(event){
+        event.preventDefault();
+        if ($(document).width() > 800) {
+            document.location.href = $(this).attr('href');
+        } else {
+            if (!$(this).parent().hasClass('active')) {
+                $(this).parent().addClass('active');
+            } else {
+                $(this).parent().removeClass('active');
+            }
+        }
+    });
 
     $(document).on('click','.js-menu-popup',function(){
         $(this).parent('.menu-burger').addClass('active');
@@ -123,7 +144,8 @@ $(function(){
         nav : false,
         dots: true,
         loop: true,
-        autoplay: 10000,
+        autoplay:true,
+        autoplayTimeout: 7000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items:1,

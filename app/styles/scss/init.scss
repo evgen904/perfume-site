@@ -483,6 +483,9 @@ a {
 						width: 132px;
 						height: 100%;
 						background: #f7f7f7;
+						@media all and (max-width: 1024px) {
+							width: 100px;
+						}
 						@media all and (max-width: 800px) {
 							background: none;
 							width: 60px;
@@ -497,6 +500,9 @@ a {
 							width: 1px;
 							height: 40px;
 							background: #b2b2b2;
+							@media all and (max-width: 1024px) {
+								left: 52px;
+							}
 							@media all and (max-width: 800px) {
 								height: 30px;
 								top: 30px;
@@ -860,7 +866,9 @@ a {
 					}
 					&.active {
 						> a {
-							color: #000;
+							@media all and (max-width: 800px) {
+								color: #000;
+							}							
 						}
 						> div {
 							@media all and (max-width: 800px) {
@@ -956,6 +964,7 @@ a {
 			}
 		}
 		.owl-dots {
+			display: none;
 			position:absolute;
 			bottom:38px;
 			left:0;
@@ -964,6 +973,7 @@ a {
 			z-index:10;
 			@media all and (max-width: 800px) {
 				bottom: 14px;
+				display: block;
 			}
 			@media all and (max-width: 640px) {
 				display: none;
@@ -1291,6 +1301,35 @@ a {
 			}
 		}
 	}
+	.block-filtrs-title {
+		display: none;
+		margin: 0 20px;
+		color: #000;
+		font-size: 19px;
+		text-transform: uppercase;
+		padding: 22px 34px 16px 20px;
+		position: relative;
+		border: 1px solid #ebeeee;
+		margin-bottom: -1px;
+		&.active {
+			&:after {
+				transform: rotate(180deg);
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 32px;
+			right: 20px;
+			width: 10px;
+			height: 6px;
+			background: url('../images/filter-ico.png') 0 0 no-repeat;
+		}
+		@media all and (max-width: 640px) {
+			display: block;
+		}
+	}
 	.block-filtrs {
 		display: flex;
 		flex-wrap: wrap;
@@ -1301,6 +1340,11 @@ a {
 		}
 		@media all and (max-width: 640px) {
 			padding: 0 20px;
+			display: none;
+			margin-bottom: 0;
+			&.active {
+				display: flex;
+			}
 		}
 		&-filed {
 			width: 16.6666%;
@@ -1308,9 +1352,12 @@ a {
 			@media all and (max-width: 1440px) {
 				width: 33.3333%;
 			}
+			@media all and (max-width: 640px) {
+				width: 100%;
+			}
 			&-title {
 				cursor: pointer;
-				border: 1px solid #ccc;
+				border: 1px solid #ebeeee;
 				margin: 0 -1px -1px 0;
 				padding: 4px 38px 0 30px;
 				height: 78px;
@@ -1327,10 +1374,19 @@ a {
 					@media all and (max-width: 1440px) {
 						background: #202121 url('../images/ico-filter-h.png') right 22px top 32px no-repeat;
 					}
+					@media all and (max-width: 640px) {
+						background: #202121 url('../images/filter-ico-h.png') right 22px top 22px no-repeat;
+					}
 				}
 				@media all and (max-width: 1440px) {
 					height: 68px;
 					background: #fff url('../images/ico-filter.png') right 22px top 32px no-repeat;
+				}
+				@media all and (max-width: 640px) {
+					height: auto;
+					padding: 20px 34px 14px 30px;
+					margin-right: 0;
+					background: #fff url('../images/filter-ico.png') right 22px top 24px no-repeat;
 				}
 			}
 			&-body {
@@ -1342,10 +1398,16 @@ a {
 				z-index: 10;
 				margin: 14px 0 0 0;
 				background: #fff;
-				padding: 20px 18px 4px;
+				padding: 18px 18px 8px;
 				border: 1px solid #ebeeee;
 				color: #4f5050;
 				font-size: 17px;
+				max-height: 460px;
+				overflow: auto;
+				@media all and (max-width: 640px) {
+					position: static;
+					margin-top: 0;
+				}
 				.field-checkbox {
 					// @-moz-document url-prefix() {
 					// 	.style-checkbox {
@@ -1410,7 +1472,7 @@ a {
 			padding: 0 30px 30px;
 		}
 		@media all and (max-width: 640px) {
-			padding: 0 20px 24px;
+			padding: 16px 20px 24px;
 			justify-content: center;
 			flex-direction: column;
 			align-items: center;
@@ -2048,7 +2110,6 @@ a {
 				}
 			}
 			&-map {
-				background: #ccc;
 				height: 500px;
 				padding-top: 4px;
 				@media all and (max-width: 1440px) {
@@ -2067,6 +2128,7 @@ a {
 		margin: 0 0 126px;
 		border-top: 1px solid #ebeeee;
 		border-bottom: 1px solid #ebeeee;
+		overflow: hidden;
 		@media all and (max-width: 1440px) {
 			flex-direction: column;
 			margin-bottom: 90px;
@@ -2128,7 +2190,6 @@ a {
 		}
 		&-map {
 			width: 50%;
-			background-color: #ccc;
 			@media all and (max-width: 1440px) {
 				width: 100%;
 				height: 320px;
@@ -2861,21 +2922,21 @@ a {
 						font-size: 14px;
 						color: #ccc;
 						text-transform: uppercase;
+						transition: transform 0.35s ease;
+						&:hover {
+							color: #fff;
+						}
 						@media all and (max-width: 800px) {
 							display: block;
 							padding: 16px 50px 16px 30px;
 						}
 					}
 					&.hasclass {
-						display: none;
-						@media all and (max-width: 800px) {
-							display: block;
-						}
 						> a {
 							position: relative;
 							&:after {
 								content: '';
-								display: block;
+								display: none;
 								width: 14px;
 								height: 7px;
 								background: url('../images/bmenu-ico.png') 0 0 no-repeat;
@@ -2883,6 +2944,9 @@ a {
 								top: 50%;
 								margin-top: -4px;
 								right: 30px;
+								@media all and (max-width: 800px) {
+									display: block;
+								}
 							}
 						}
 						&.active {
@@ -2892,13 +2956,11 @@ a {
 						}
 					}
 					> ul {
+						display: none;
 						padding: 6px 0;
 						margin: 0;
 						list-style: none;
 						border-top: 1px solid #3d3e3e;
-						@media all and (max-width: 800px) {
-							display: none;
-						}
 						li {
 							padding: 0 20px 0 40px;
 							a {
@@ -2919,7 +2981,9 @@ a {
 					}
 					&.hasclass.active {
 						> ul {
-							display: block;
+							@media all and (max-width: 800px) {
+								display: block;
+							}
 						}
 					}
 				}
