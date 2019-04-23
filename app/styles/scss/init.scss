@@ -2332,6 +2332,7 @@ a {
 					font-size: 19px;
 					font-family: 'Circe';
 					width: 100%;
+					transition: all 0.3s ease;
 					&::-webkit-input-placeholder { color: #a1a1a1; }
 					&:-ms-input-placeholder { color: #a1a1a1; }
 					&::-ms-input-placeholder { color: #a1a1a1; }
@@ -2544,6 +2545,7 @@ a {
 								&:-ms-input-placeholder { color: #7d7e7e; }
 								&::-ms-input-placeholder { color: #7d7e7e; }
 								&::placeholder { color: #7d7e7e; } 
+								transition: all 0.3s ease;
 								@media all and (max-width: 800px) {
 									padding: 12px 20px;
 								}
@@ -3199,7 +3201,9 @@ a {
 					}
 				}
 				.mail {
+					display: none;
 					@media all and (max-width: 1280px) {
+						display: block;
 						padding-top: 10px;
 					}
 					.name {
