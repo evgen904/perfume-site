@@ -1,6 +1,6 @@
 $(function(){
 
-    var isiOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false);
+    s3Animator.once = true;
 
     var menuTop = $('.js-m-top-clone').clone();
     var socialClone = $('.js-social-clone').clone();
@@ -38,20 +38,17 @@ $(function(){
     });
 
     $(document).on('click','.js-menu-popup',function(){
-        $('.menu-burger').addClass('active');
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active'); 
+            $('.menu-burger').addClass('active');
+        } else {
+            $(this).removeClass('active'); 
+            $('.menu-burger').removeClass('active');
+        }        
     });
     $(document).on('click','.js-menu-popup-close',function(){
-        $('.menu-burger').removeClass('active');
+        $('.menu-burger, .js-menu-popup').removeClass('active');
     });
-
-    // if (isiOS == true) {
-    //     $(document).on('click touchstart','.js-menu-popup-close',function(){
-    //         $('.menu-burger').removeClass('active');
-    //     });
-    //     $(document).on('click touchstart','.js-select-vendor-close',function(){
-    //         $('.js-select-vendor').removeClass('active');
-    //     });
-    // }
 
 
 
@@ -110,6 +107,8 @@ $(function(){
 
     $('.js-btn-filter').on('click',function(){
         if (!$(this).hasClass('active')) {
+            $('.js-btn-filter').removeClass('active');
+            $('.js-btn-filter').next().slideUp();
             $(this).addClass('active');
             $(this).next().slideDown();
         } else {
@@ -147,7 +146,10 @@ $(function(){
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items:1,
-        onTranslate: fadeBlock
+        onTranslate: fadeBlock,
+        onInitialize: function(){
+            $('.slider-head').removeClass('no-slide');
+        }
     });
     function fadeBlock(){
         $(".slider-head-text").removeClass('animated fadeInLeft');
@@ -159,7 +161,7 @@ $(function(){
     $('.js-slider-prod').owlCarousel({
         nav : true,
         dots: false,
-        loop: false,
+        loop: true,
         items:3,
         responsive:{
             0:{
@@ -180,7 +182,7 @@ $(function(){
     $('.js-slider-review').owlCarousel({
         nav : true,
         dots: false,
-        loop: false,
+        loop: true,
         items:3,
         responsive:{
             0:{
